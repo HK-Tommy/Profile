@@ -12,7 +12,19 @@
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
+<<<<<<< HEAD
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="preload">
+=======
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+>>>>>>> f13528d9f41e402a28f077a940b07a5ef26f49fc
     <header class="header">
         <div class="container">
             <div class="header-content">
