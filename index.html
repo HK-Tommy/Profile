@@ -13,6 +13,14 @@
 	<link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     <header class="header">
         <div class="container">
             <div class="header-content">
