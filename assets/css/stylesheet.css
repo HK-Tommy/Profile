@@ -11682,32 +11682,11 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
-<<<<<<< HEAD
 .loader-wrapper {
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 1000;
-=======
-body {
-  margin: 0;
-  padding: 0;
-  width:100vw;
-  height: 100vh;
-  background-color: #eee;
-}
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  height:100%;
-}
-.loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
->>>>>>> f13528d9f41e402a28f077a940b07a5ef26f49fc
   top: 0;
   left: 0;
   background-color: #242f3f;
@@ -11730,12 +11709,9 @@ body {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
-<<<<<<< HEAD
 .preload {
   overflow: hidden;
 }
-=======
->>>>>>> f13528d9f41e402a28f077a940b07a5ef26f49fc
 
 @keyframes loader {
   0% { transform: rotate(0deg);}
@@ -11750,10 +11726,5 @@ body {
   25% { height: 0%;}
   50% { height: 100%;}
   75% { height: 100%;}
-<<<<<<< HEAD
   100% { height: 0%;}
 }
-=======
-  100% { height: 0%}
-}
->>>>>>> f13528d9f41e402a28f077a940b07a5ef26f49fc
