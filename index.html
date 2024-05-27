@@ -12,7 +12,7 @@
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" class="preload">
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -340,7 +340,7 @@
     </section>
 
     <footer class="footer py-3" id="contact">
-        <div class="container">
+          <div class="container">
             <p class="small mb-0 text-light">
                <a>Email : <a href="mailto:tlamhappy10@gmail.com">tlamhappy10@gmail.com</a>
                <br>
@@ -369,5 +369,19 @@
     <!-- JohnDoe js -->
     <script src="assets/js/stylesheet.js"></script>
 
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+  
+      <script>
+          $(window).on("load",function(){
+            var delayInMilliseconds = 2000; //1 second
+                setTimeout(function() {
+                    $(".loader-wrapper").fadeOut("slow");
+                    $("body").removeClass("preload");
+                    $(".navbar").show("flex");
+                }, delayInMilliseconds);
+          });
+      </script>
 </body>
 </html>
